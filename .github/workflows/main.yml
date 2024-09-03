@@ -84,13 +84,13 @@ jobs:
         working-directory: ${{ env.TMPDIR }}
 
       - name: Download macOS JNI library
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: libefidecompress.dylib
           path: os/osx64
 
       - name: Download Windows JNI library
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: efidecompress.dll
           path: os/win64
